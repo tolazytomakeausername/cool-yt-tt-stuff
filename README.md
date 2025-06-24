@@ -6,7 +6,8 @@ google-api-python-client
 python-dotenv
 ffmpeg
 Python 3.6 or higher
-do pip install yt-dlp google-api-python-client python-dotenv
+isodate
+do pip install yt-dlp google-api-python-client python-dotenv isodate 
 Install ffmpeg with sudo apt install ffmpeg for debian, or brew install ffmpeg for macOS
 For windows, idfk gfy
 What ts does is lets you download any yt video or playlist from youtube as audio, or audio and video!!! Cool, right? Oh, it's not cool? FUCK OF-
