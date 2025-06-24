@@ -1,7 +1,7 @@
 # yt-tt-downloader
 
 ## Description
-`yt-tt-downloader` is a versatile command-line tool, implemented as a single Python script (`media.py`), designed to simplify downloading video and audio content from both YouTube and TikTok. It leverages `yt-dlp` for the core download functionality and the YouTube Data API for advanced YouTube features like search and playlist handling.
+`yt-tt-downloader` is a powerful command-line tool, implemented as a single executable Python script named `yt`, designed to streamline the process of downloading video and audio content from both YouTube and TikTok. It leverages `yt-dlp` for core download functionality and integrates with the YouTube Data API for advanced features like intelligent search, playlist handling, and video duration filtering.
 
 ## Features
 * **YouTube (`yt`) Subcommand:**
@@ -40,28 +40,46 @@
     git clone [https://github.com/your-username/yt-tt-downloader.git](https://github.com/your-username/yt-tt-downloader.git) # Replace with your actual repo URL
     cd yt-tt-downloader
     ```
-    (If you only have `media.py`, place it in your desired project directory.)
+    (If you only have the `yt` script, place it in your desired project directory.)
 
-2.  **Install Python dependencies:**
+2.  **Rename the script (if necessary):**
+    If your script is currently named `media.py`, rename it to `yt`:
+    ```bash
+    mv media.py yt
+    ```
+
+3.  **Make the script executable:**
+    ```bash
+    chmod +x yt
+    ```
+
+4.  **Install Python dependencies:**
     ```bash
     pip install yt-dlp google-api-python-client python-dotenv isodate
     ```
 
-3.  **Obtain a YouTube Data API v3 key:**
+5.  **Obtain a YouTube Data API v3 key:**
     * Follow the instructions on the [Google Cloud Console](https://console.cloud.google.com/apis/credentials) to get a YouTube Data API v3 key.
 
-4.  **Create a `.env` file:**
-    * In the same directory as `media.py`, create a file named `.env`.
+6.  **Create a `.env` file:**
+    * In the same directory as the `yt` script, create a file named `.env`.
     * Add your YouTube API key to this file:
         ```dotenv
         YOUTUBE_API_KEY="YOUR_API_KEY_HERE"
         ```
 
+7.  **Optional: Add `yt` to your system's PATH:**
+    For convenient execution from any directory, move the `yt` script to a directory included in your system's `PATH` (e.g., `/usr/local/bin`):
+    ```bash
+    sudo mv yt /usr/local/bin/
+    ```
+    (Or add the script's current directory to your PATH environment variable.)
+
 ## Usage
 
-The script is executed using `python media.py` followed by the subcommand and its arguments.
+The script is now directly executable using `yt` followed by the subcommand and its arguments.
 
 ### General Help
 To see the full help message:
 ```bash
-python media.py -h
+yt -h
