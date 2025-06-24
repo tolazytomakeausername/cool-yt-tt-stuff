@@ -37,7 +37,7 @@
 ## Setup
 1.  **Clone or download this repository:**
     ```bash
-    git clone [https://github.com/your-username/yt-tt-downloader.git](https://github.com/your-username/yt-tt-downloader.git) # Replace with your actual repo URL
+    git clone [https://github.com/tolazytomakeausername/yt-tt-downloader.git](https://github.com/your-username/yt-tt-downloader.git) # Replace with your actual repo URL
     cd yt-tt-downloader
     ```
     (If you only have the `yt` script, place it in your desired project directory.)
