@@ -25,7 +25,10 @@ Anyways, whatchu wanna do first is go to the latest release and download the one
 Now that you have that, you gonna go to wherever it is, and then if you're on linux debian, do ```chmod +x yt``` And no output = shouldve worked 
 You gotta go to "https://console.cloud.google.com/apis/library/youtube.googleapis.com?authuser=1&inv=1&invt=Ab08Sg&supportedpurview=project" and click enable, then go to "credentials" and then click "create credentials" click "API key" click generate. Copy the API key and then go to where you put yt file and then create a new file called .env
 
-Now you want to go into the .env, then type `YOUTUBE_API_KEY=12345678910111213` (Replace with your actual API key) 
-IMPORTANT!!! DO NOT SHARE API KEY WITH ANYONE!!!!! THIS CAN BE USED TO IMPERSONATE YOU AND CAUSE FRAUD. DO NOT SHARE!!!!!!!
+Now you want to go into the .env, then type `YOUTUBE_API_KEY=12345678910111213` (Replace with your actual API key)
+
+
+***IMPORTANT!!! DO NOT SHARE API KEY WITH ANYONE!!!!! THIS CAN BE USED TO IMPERSONATE YOU AND CAUSE FRAUD. DO NOT SHARE!!!!!!!***
+
 
 Anyways... Now, you want to do yt -h. If shit pops up, you chillin. If shit doesn't popup, you not. If you're not chilling, dm me on discord with your issue. My discord is "thattrandombird"
